@@ -330,6 +330,7 @@ main {
 
 	
 	color: $text-color;
+	margin: 1rem;
 
 
 }
@@ -347,7 +348,7 @@ main {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	align-content:space-between;
+	// align-content:space-between;
 	align-items:space-between;
 }
 // 
@@ -537,8 +538,8 @@ main {
 			top: 0;
 			left: 50%;
 			transform: translate(-50%, 0);
-			min-width: 100%;
-			//min-height: 100%;
+			max-width: 100%;
+			height: auto;
 
 			//z-index: 3;
 		}

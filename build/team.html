@@ -62,8 +62,36 @@
 	
 	
 	<div class="container p-0">
-		
-	   <ul class="nav d-flex justify-content-between p-0 m-0 " id="nav_menu">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+	   
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	
+	    <div class="collapse navbar-collapse" id="navbar1">
+	      <ul class="navbar-nav m-0" id="nav_menu">
+	            <li class="nav-item active">
+	                <a class="nav-link" href="index.html">Our activities/news <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item">
+	               <a class="nav-link" href="about.html">About us</a>
+	            </li>
+	            <li class="nav-item">
+	               <a class="nav-link" href="partners.html">Our partners</a>
+	            </li>
+	            <li class="nav-item">
+	               <a class="nav-link" href="team.html">Our team</a>
+	            </li>
+	            <li class="nav-item">
+	               <a class="nav-link" href="contact.html">Contacts</a>
+	            </li>
+	            
+	
+	      </ul>
+	     
+	    </div>
+	</nav>
+	   <!-- <ul class="nav d-flex justify-content-between p-0 m-0 " id="nav_menu">
 	     <li class="nav-item">
 	       <a class="nav-link" href="index.html">Our activities/news <span class="sr-only">(current)</span></a>
 	     </li>
@@ -81,7 +109,7 @@
 	     </li>
 	 
 	
-	   </ul>
+	   </ul> -->
 	 
 	
 	</div>
@@ -90,15 +118,15 @@
 	<main>
 		<section class="section container">
 			
-<div class="row">
-	<div class="col-lg-6 my-5">
-		<div class="member__card row">
-			<div class="col-lg-4 p-0">
+<div class="row masonry">
+	<div class="col-lg-6 masonry-item py-5">
+		<div class="member__card row m-0">
+			<div class="col-lg-5  col-md-6 ">
 				<div class="member__img">
 					<img src="img/team-1.jpg" alt="Lilya Verevkina">
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-7 col-md-6">
 				<h3 class="member__title">Вірьовкіна Лілія</h3>
 				<div class="member__subscribe">Юристка, правозахистниця, тренерка. lorem200</div>
 				<div class="member__city">м. Дніпро</div>
@@ -116,14 +144,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-6">
-		<div class="member__card row">
-			<div class="col-lg-4 p-0">
+	<div class="col-lg-6 masonry-item py-5">
+		<div class="member__card row m-0">
+			<div class="col-lg-5 col-md-6">
 				<div class="member__img">
 					<img src="img/team-2.jpg" alt="Lilya Verevkina">
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-7 col-md-6">
 				<h3 class="member__title">Якимцева Ольга</h3>
 				<div class="member__subscribe">Бухгалтерка організації.</div>
 				<div class="member__city">м. Дніпро</div>
@@ -143,14 +171,14 @@
 	</div>
 				
 				
-	<div class="col-lg-6">
+	<div class="col-lg-6 masonry-item py-5">
 		<div class="member__card row">
-			<div class="col-lg-4 p-0">
+			<div class="col-lg-5 col-md-6">
 				<div class="member__img">
 					<img src="img/team-3.jpg" alt="Lilya Verevkina">
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-7 col-md-6">
 				<h3 class="member__title">Яковлєва Олена</h3>
 				<div class="member__subscribe">Практичний психолог; спецiалiст в областi дитячої та пiдлiткової психологiї; фахiвець в областi кризової психологiї, психосоцiальної пiдтримки осiб, що постраждали внаслiдок воєнних дiй на Сходi України. Напрямки діяльностi: психологiчне консультування та психокорекцiя; проведення  тренiнгiв, семінарiв, груп пiдтримки; просвiтницька психологiчна дiяльнiсть серед населення; кризове консультування; психолого-педагогічне консультування дiтей, що мають особливостi в розвитку, та їх батьків.</div>
 				<div class="member__city">м. Запоріжжя</div>
@@ -168,14 +196,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-6">
+	<div class="col-lg-6 masonry-item py-5">
 		<div class="member__card row">
-			<div class="col-lg-4 p-0">
+			<div class="col-lg-5 col-md-6">
 				<div class="member__img">
 					<img src="img/team-4.jpg" alt="Firsova Olekcandra">
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-7 col-md-6">
 				<h3 class="member__title">Фірсова Олександра</h3>
 				<div class="member__subscribe">Психологиня, тренерка, координаторка соціальних та психологічних подій у містах, феміністка, популяризаторка ідей толерантності та терпимості.</div>
 				<div class="member__city">м. Дніпро</div>
@@ -193,16 +221,40 @@
 			</div>
 		</div>
 	</div>
-				
-				
-	<div class="col-lg-6">
+	<div class="col-lg-6 masonry-item py-5">
 		<div class="member__card row">
-			<div class="col-lg-4 p-0">
+			<div class="col-lg-5 col-md-6">
+				<div class="member__img">
+					<img src="img/team-6.jpg" alt="Lilya Verevkina">
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-6">
+				<h3 class="member__title">Велика Ольга</h3>
+				<div class="member__subscribe">Практичний психолог, фахівець в області дитячої та сімейної психології, є фахова підготовка та практичні навички кризового консультування, роботи з конфліктами, розвитку психосоціальної стійкості до стресу у осіб,  що постраждали внаслідок воєнних дій на Сході України.</div>
+				<div class="member__city">м. Запоріжжя</div>
+				<div class="member__phone">Телефон:
+					<a href="tel: +38050 628 80 74">050 628 80 74</a>
+					<a href="tel: +38050 628 80 74"></a>
+				</div>
+				<div class="member__email">E-mail: 
+					<a href="mailto: caritascmm@gmail.com">caritascmm@gmail.com</a>
+				</div>
+				<div class="member__resume">
+					Резюме за
+					<a href="#">посиланням</a>
+				</div>
+			</div>
+		</div>
+	</div>			
+				
+	<div class="col-lg-6 masonry-item py-5">
+		<div class="member__card row">
+			<div class="col-lg-5 col-md-6">
 				<div class="member__img">
 					<img src="img/team-5.jpg" alt="Малишева Анжеліка">
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-7 col-md-6">
 				<h3 class="member__title">Малишева Анжеліка</h3>
 				<div class="member__subscribe">Психологіня, тематика: трансформативна освіта дорослих, лідерство, менторство, самодисципліна, планування та тайм-менеджмент, керування своїми фінансами.</div>
 				<div class="member__city">м.  Харків</div>
@@ -220,31 +272,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-6">
-		<div class="member__card row">
-			<div class="col-lg-4 p-0">
-				<div class="member__img">
-					<img src="img/team-6.jpg" alt="Lilya Verevkina">
-				</div>
-			</div>
-			<div class="col-lg-8">
-				<h3 class="member__title">Велика Ольга</h3>
-				<div class="member__subscribe">Практичний психолог, фахівець в області дитячої та сімейної психології, є фахова підготовка та практичні навички кризового консультування, роботи з конфліктами, розвитку психосоціальної стійкості до стресу у осіб,  що постраждали внаслідок воєнних дій на Сході України.</div>
-				<div class="member__city">м. Запоріжжя</div>
-				<div class="member__phone">Телефон:
-					<a href="tel: +38050 628 80 74">050 628 80 74</a>
-					<a href="tel: +38050 628 80 74"></a>
-				</div>
-				<div class="member__email">E-mail: 
-					<a href="mailto: caritascmm@gmail.com">caritascmm@gmail.com</a>
-				</div>
-				<div class="member__resume">
-					Резюме за
-					<a href="#">посиланням</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 </div>
 			
 		</section>

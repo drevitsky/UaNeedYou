@@ -10,19 +10,30 @@ $('.article__more').on('click', function() {
 //делаем активное меню
 var location = window.location.href;
 var cur_url = location.split('/').pop();
-    console.log('location = ' + location);
-    console.log('cur_url = ' + cur_url);
+    // console.log('location = ' + location);
+    // console.log('cur_url = ' + cur_url);
 
 $('#nav_menu .nav-link').each(function() {
     var link = $(this).attr('href');
- 	console.log('link=' + link);
- 	console.log('this=' + this);
+ 	// console.log('link=' + link);
+ 	// console.log('this=' + this);
         if (cur_url == link)
         {
             $(this).addClass('active');
-            console.log('addClass');
+            // console.log('addClass');
         }
 	});
-	 
+	
+// masonry
+var isotope2 = $('.masonry').isotope({
+				itemSelector: '.masonry-item',
+				percentPosition: true,
+				masonry: {
+					columnWidth: '.col-lg-6',
+					
+					
+				}
+			});	
+
 });
 
