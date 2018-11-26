@@ -90,6 +90,10 @@ main {
 
 .section--hello {
 	background-color: $akcent-color;
+	padding-top: 30rem;
+	@media screen and (max-width: 992px) {
+		padding-top: 22rem;
+		}
 }
 
 .hello-text {
@@ -341,6 +345,8 @@ main {
 	padding-top: 3rem ;
  	padding-bottom: 3rem ;
 	border-bottom: 3px solid $title-color;
+	position: fixed;
+	background:$text-color;
 	@media screen and (max-width: 992px) {
 		border: none;
 		}
@@ -352,13 +358,18 @@ main {
 	// flex-direction: row-reverse;
 	// }
 }
+.toggle-box {
+	display: none;
+		@media screen and (max-width: 992px) {
+	display: block;
+}
+}
+
 .logo-box {
 	display: flex;
 	align-items:center;
 	justify-content: space-around;
-	@media screen and (max-width: 992px) {
-	
-}
+
 }
 .logo-title {
 	color: $title-color;
@@ -399,7 +410,9 @@ main {
 
 	}
 }	
-
+.navbar-expand-lg .navbar-collapse {
+	flex-basis: 100%;
+}
 
 .nav-item {
 
