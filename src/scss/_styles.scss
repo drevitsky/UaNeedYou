@@ -91,7 +91,7 @@ main {
 .section--hello {
 	background-color: $akcent-color;
 	padding-top: 30rem;
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 991px) {
 		padding-top: 22rem;
 		}
 }
@@ -167,35 +167,7 @@ main {
 		}
 
 	}
-	&--submit_filter {
-		width: 8rem;
-		height: 5.3rem;
-		background-color: $text-color;
-		text-transform: uppercase;
-		text-decoration: none;
-		font-size: 3.6rem;
-		line-height: 3.6rem;
-		text-align: center;
-		color: $title-color;
-		border-radius: 3.6rem;
-		border: none;
-		transition: all 0.6s;
-		outline: none;
-		margin: 0 auto;
-		&:hover,&:focus {
-			background-color:$title-color;
-			color: $text-color;
-			outline: none;
-		}
-		&:active {
-			background-color:darken($title-color, 10%);
-			color: lighten($text-color,10%);
-			box-shadow:  0px 0px 0px 1px rgba(#fff, 0.4);
-			outline: none;
-
-
-		}
-	}
+	
 }
 .form_filter {
 	display: flex;
@@ -203,34 +175,62 @@ main {
 }
 .section__filter {
 	font-size: 1.75rem;
-	background:$bg-blue;
+	//background:$bg-blue;
 	min-height: 50rem;
-	border-bottom-right-radius: 5rem;
-	border-bottom-left-radius: 5rem;
-	padding: 3rem;
+	//border-bottom-right-radius: 5rem;
+	//border-bottom-left-radius: 5rem;
+	//padding: 3rem;
+	padding-top: 10rem;
+	position: relative;
+	z-index: 5;
 	&_title {
-		position: relative;
+		position: absolute;
+		z-index: 10;
+		width: 28rem;
 		text-align: center;
-		padding-left: 2rem;
-		margin: 0;
+		padding: 0 2rem 0 4rem ;
+		top: 3rem;
+		left: 50%;
+		transform: translate(-50%,0);
+
 		font-size: 3.6rem;	
+		border: 1px solid red;
+		border-radius: 5rem;
+		background-color: $bg-blue;
 			&:before {
 				position: absolute;
-				top:0;
-				left:0;
+				top:50%;
+				left:2rem;
+				transform: translate(0,-50%);
 				content:''; 
 				background-image: url(../img/filter.png);
-				background-size: cover;
-				width: 4rem;
-				height: 4rem;
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 3.6rem;
+				height: 3.6rem;
 				// outline: 1px solid yellow;
 
 			}
 	
 	}
+	@media screen and (max-width: 992px) {
+		min-height: 10rem;
+		}
 }
 .filter__list {
 	list-style-type: none;
+	background:$bg-blue;
+	position: absolute;
+	padding-left: 6rem;
+	padding-top: 15rem;
+	padding-bottom: 8rem;
+	border-bottom-right-radius: 5rem;
+	border-bottom-left-radius: 5rem;
+	margin-top: 0;
+	width: 32rem;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
 	&_text {
 		position: relative;
 		padding-bottom: 2rem;
@@ -258,8 +258,49 @@ main {
 	
 	
 	}
+	@media screen and (max-width: 992px) {
+		display: none;
+		&.active {
+			display: block;
+			border-radius: 5rem;
+		}
+	
 }
+	
+}
+.btn--submit_filter {
+		width: 8rem;
+		height: 5.3rem;
+		background-color: $text-color;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+		text-align: center;
+		color: $title-color;
+		border-radius: 3.6rem;
+		border: none;
+		transition: all 0.6s;
+		outline: none;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+		transform: translate(-50%,0);
+		&:hover,&:focus {
+			background-color:$title-color;
+			color: $text-color;
+			outline: none;
+		}
+		&:active {
+			background-color:darken($title-color, 10%);
+			color: lighten($text-color,10%);
+			box-shadow:  0px 0px 0px 1px rgba(#fff, 0.4);
+			outline: none;
 
+
+		}
+	}
 
 
 .section--news {

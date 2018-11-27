@@ -5,7 +5,11 @@ $('.article__more').on('click', function() {
     $(this).siblings('div.article__content').toggleClass('active');
     // console.log();
 	});
-
+// делаем раcкрывающийся фильтр
+$('#filter-open').on('click', function() {
+    $(this).siblings().find('.filter__list').toggleClass('active');
+    // console.log();
+	});
 
 //делаем активное меню
 var location = window.location.href;
@@ -23,7 +27,16 @@ $('#nav_menu .nav-link').each(function() {
             // console.log('addClass');
         }
 	});
-	
+// меняем container 
+$(window).resize(function(e){
+     if ($(window).width() < 992) { //1169
+        $(".wrapper > .container").removeClass("container").addClass("container-fluid");
+    }
+    else if($(window).width() > 992) { // 1169
+        $(".wrapper > .container-fluid").removeClass("container-fluid").addClass("container");
+    }
+});
+
 // masonry
 var isotope2 = $('.masonry').isotope({
 				itemSelector: '.masonry-item',
