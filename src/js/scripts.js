@@ -47,6 +47,24 @@ var isotope2 = $('.masonry').isotope({
 					
 				}
 			});	
+//уменьшаем header при скроле
+
+
 
 });
 
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+$('.header-box').addClass("glide");
+$('.logo-title').addClass("logo-title--glide");
+$('.logo').addClass("logo--glide");
+}
+
+else{
+$('.header-box').removeClass("glide");
+$('.logo-title').removeClass("logo-title--glide");
+$('.logo').removeClass("logo--glide");
+}
+
+
+});

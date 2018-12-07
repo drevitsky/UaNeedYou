@@ -445,9 +445,18 @@ main {
 	position: fixed;
 	top: 0;
 	background:$text-color;
-	@media screen and (max-width: 992px) {
+	
+	 @media screen and (max-width: 992px) {
+	 	//border-bottom: 21px solid $title-color;
 		border: none;
 		}
+
+}
+.glide {
+	border: none;
+	
+}
+.glide {
 
 }
 .header-row {
@@ -476,11 +485,21 @@ main {
 	max-width: 20rem;
 	// margin-left: 2.3rem;
 	text-transform: uppercase;
+	&--glide {
+		display: none;
+	}
 	@media screen and (max-width: 992px) {
 	display: none;
 }
 }
+.logo--glide {
+		transform: scale(0.5);
+			//width: 50%;
+			//height: 50%;
+			margin: 0 auto;
+		transition: all 0.6s;
 
+	}
 @media screen and (max-width: 992px) {
 	.social {
 		order:4;
